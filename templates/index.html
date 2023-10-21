@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+  <section>
+    <article>
+      <h2>Checkout our Menu</h2>
+      <p>
+Our restaurant's menu is a delightful journey through a world of flavors, where each dish is a carefully crafted masterpiece. Join us for a culinary adventure that promises an unforgettable dining experience, celebrating the art of food and the joy of shared meals.
+
+      </p>
+      <p>
+        <a href="{% url 'menu' %}">See our full menu</a>
+      </p>
+    </article>
+    <article>
+      <h2>Book your table</h2>
+      <p>
+Reserving a table at our restaurant is your gateway to an unforgettable dining experience. Make your reservation today and embark on a journey of flavors and hospitality.
+
+      </p>
+      <p>
+        <a href="{% url 'book' %}">Book your table now</a>
+      </p>
+    </article>
+  </section>
+  <section>
+    <article id="hero">
+      <a href="{% url 'book' %}" class="cta"> Book Reservation </a>
+    </article>
+  </section>
+{% endblock %}
